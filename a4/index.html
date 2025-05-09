@@ -1,0 +1,65 @@
+
+<html>
+<head>
+  <title>Facebook - Sign Up</title>
+</head>
+<body>
+  <h1>Facebook</h1>
+  <h2>Create a new account</h2>
+  <p>It's quick and easy.</p>
+
+  <form  method="post">
+    <label for="firstname">First name:</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="lastname">Last name:</label><br>
+    <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="email">Mobile number or email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">New password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label>Birthday:</label><br>
+    <select name="day">
+      <option value="">Day</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <select name="month">
+      <option value="">Month</option>
+      <option value="1">Jan</option>
+      <option value="2">Feb</option>
+      <option value="3">Mar</option>
+      <option value="4">Apr</option>
+      <option value="5">May</option>
+    </select>
+
+    <select name="year">
+      <option value="">Year</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+    </select><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="custom" name="gender" value="custom">
+    <label for="custom">Custom</label><br><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <p><a href="#">Already have an account?</a></p>
+</body>
+</html>
