@@ -2,10 +2,11 @@
     margin: 0px;
 }
 header {
+
 display: flex;
 justify-content: space-between;
 background-color: rgb(16, 168, 39);
-color:rgb(175, 176, 177)
+color:rgb(255, 255, 255)
 }
 li{
     display: inline-block;
@@ -16,4 +17,5 @@ li{
 .container{
     width: 100%;
     margin: auto;
+    height: 25%;
 }
