@@ -30,6 +30,7 @@ header a{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    background-color: azure;
 }
 
 .box {
@@ -57,4 +58,24 @@ header a{
 
 .title {
     font-size: 30px;
+}
+.card {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.subcard {
+    background-color: beige;
+    color: black;
+    padding: 15px;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
