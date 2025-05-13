@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #output {
+      margin-top: 20px;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-   
-        <input id="t1" type="text" placeholder="Enter email"><br><br>
-        <input id="p1" type="password" placeholder="Enter password"><br><br>
-        <button onclick="display()">Submit</button>
-        <hr>
-        
-        <div id="output"></div>
-        <script src="script.js"></script>
-   
+
+  <div class="container">
+    <input id="t1" type="text" placeholder="Enter email"><br>
+    <input id="p1" type="password" placeholder="Enter password"><br>
+    <button onclick="display()">Submit</button>
+    <hr>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    function display() {
+      var email = document.getElementById("t1").value;
+      var password = document.getElementById("p1").value;
+      document.getElementById("output").innerHTML = `
+        Email: ${email}<br>Password: ${password}`;
+    }
+  </script>
+
 </body>
 </html>
