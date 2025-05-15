@@ -68,16 +68,24 @@
 
      function dispProducts() {
   let str = "";
-  products.map((value) => {
+  products.map((value, index) => {
     str += `<div>
               <img src=${value.imgUrl}/>
               <h2>${value.name}</h2>
               <h3>$${value.price}</h3>
               <button>Add to Cart</button>
+              <button onclick="deleteProduct(${index})">Delete</button>
             </div>`;
   });
   container.innerHTML = str;
 }
+
+
+function deleteProduct(index) {
+  products.splice(index, 1);
+  dispProducts();
+}
+
     </script>
   </body>
 </html>
