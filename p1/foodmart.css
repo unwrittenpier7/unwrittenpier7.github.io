@@ -1,0 +1,39 @@
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row div {
+    padding: 20px;
+    margin: 10px;
+    background-color: orange;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: silver;
+    padding: 20px;
+}
+
+#root {
+    min-height: 600px;
+    padding: 10px;
+}
