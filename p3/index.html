@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showProducts()">
+    <header>
+        <h1 class="title">My Store</h1>
+        <ul class="list">
+            <li onclick="showProducts()">Home</li>
+            <li onclick="dispCart()">Cart</li>
+        </ul>
+    </header>
+    <main>
+      <div id="root" class="container">
+        <div class="product-card">
+            <h3>p1</h3>
+            <p>Price: ₹34</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>p2</h3>
+            <p>Price: ₹50</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>p3</h3>
+            <p>Price: ₹75</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2025. All rights reserved.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
