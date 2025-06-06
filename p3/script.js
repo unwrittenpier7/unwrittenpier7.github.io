@@ -1,14 +1,15 @@
 const products = [
-  { id: 1, name: "p1", price: 34 },
-  { id: 2, name: "p2", price: 50 },
-  { id: 3, name: "p3", price: 75 },
+  { id: 1, name: "APPLE", price: 34 },
+  { id: 2, name: "MANGO", price: 50 },
+  { id: 3, name: "BANANA", price: 75 },
 ];
 
-let cart = {}; 
+let cart = {}; // Object to track product quantities
 
+// Display products on homepage
 const showProducts = () => {
   const root = document.getElementById("root");
-  root.innerHTML = ""; 
+  root.innerHTML = ""; // Clear previous content
 
   products.forEach((product) => {
     const card = document.createElement("div");
@@ -22,16 +23,17 @@ const showProducts = () => {
   });
 };
 
+// Add product to cart
 const addToCart = (id) => {
   const currentQty = cart[id] ?? 0;
   cart = {
     ...cart,
     [id]: currentQty + 1
   };
-  //alert(`${products.find(p => p.id === id).name} added to cart`);
-  console.log(cart);
+  console.log(cart); // Optional: For testing
 };
 
+// Display cart content
 const dispCart = () => {
   const root = document.getElementById("root");
   root.innerHTML = "<h2>Your Cart</h2>";
@@ -64,6 +66,7 @@ const dispCart = () => {
   root.innerHTML += cartHtml;
 };
 
+// Increase quantity
 const increaseQty = (id) => {
   const currentQty = cart[id] ?? 0;
   cart = { ...cart, [id]: currentQty + 1 };
@@ -75,7 +78,7 @@ const decreaseQty = (id) => {
   if (currentQty > 1) {
     cart = { ...cart, [id]: currentQty - 1 };
   } else {
-    const { [id]: _, ...rest } = cart; 
+    const { [id]: _, ...rest } = cart;
     cart = rest;
   }
   dispCart();

@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter</title>
+    <title>Peter | MERN Stack Developer</title>
     <link rel="stylesheet" href="styles.css" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -16,11 +21,12 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#About">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
+
       <main>
         <section id="home">
           <div class="row">
@@ -29,86 +35,74 @@
               <p class="summary">
                 I'm a passionate MERN Stack Developer with hands-on experience in building full-stack web applications using MongoDB, Express.js, React, and Node.js. I specialize in crafting responsive, high-performance interfaces and robust backend systems that solve real-world problems. From developing RESTful APIs to integrating dynamic frontends, I aim to deliver clean, scalable, and user-centric solutions.
               </p>
-              <p><button class="btn-signup">Know more</button></p>
+              <p><a href="#about" class="btn-signup">Know more</a></p>
             </div>
             <div class="box">
-              <img src="images/w2.jpeg" width="400px" class="image" alt="Authors Image" />
+              <img src="images/w2.jpeg" alt="Author's Image" class="image" />
             </div>
           </div>
         </section>
+
         <h2 id="projects" class="h">Projects</h2>
         <div class="card">
           <div class="subcard">
             <h4>Food Mart – Grocery Store Website</h4>
-            <p>A user-friendly grocery store website built using HTML and CSS. The site features a clean layout showcasing products, promotional offers, and essential sections like About Us, Contact, and Footer. Designed with simplicity and performance in mind, it provides an intuitive shopping experience for users.
-
-</p>
-            <button class="btn-signup"><a href="p2/index.html">View Demo</a></button>
+            <p>A user-friendly grocery store website built using HTML and CSS. The site features a clean layout showcasing products, promotional offers, and essential sections like About Us, Contact, and Footer.</p>
+            <a href="p2/index.html" class="btn-signup">View Demo</a>
           </div>
+
           <div class="subcard">
             <h4>My Store</h4>
-            <p></p>
-            <button class="btn-signup"> <a href="p3/index.html">View Demo </a></button>
+            <p>A sample online store template built using front-end technologies.</p>
+            <a href="p3/index.html" class="btn-signup">View Demo</a>
           </div>
+
           <div class="subcard">
             <h4>BANK_Model</h4>
-            <p>This is a description of Project 3.</p>
-            <button class="btn-signup"><a href="p4/index.html">View Demp</a></button>
+            <p>This project simulates basic banking operations using frontend interfaces.</p>
+            <a href="p4/index.html" class="btn-signup">View Demo</a>
           </div>
 
           <div class="subcard">
             <h4>Project 4</h4>
-            <p>React App.</p>
-            <button class="btn-signup"><a href="https://gcet-react-app-git-main-joel-peters-projects.vercel.app"> View Demo </a></button>
+            <p>Live React App showcasing frontend functionality and dynamic routing.</p>
+            <a href="https://gcet-react-app-git-main-joel-peters-projects.vercel.app" class="btn-signup" target="_blank">View Demo</a>
           </div>
         </div>
-       
-<section id="services" class="services-section">
-    <h2>Services</h2>
-    
-    <div class="service">
-        <h3>Web Development</h3>
-        <p>
-            I specialize in building responsive, high-performance websites that are tailored to the needs of the user. I use modern frameworks and technologies like React and Node.js to create seamless user experiences.
-        </p>
-    </div>
-    
-    <div class="service">
-        <h3>Backend Development</h3>
-        <p>
-            I develop robust backend systems using technologies such as Node.js, Express.js, and MongoDB. These systems ensure scalability, security, and high performance for your applications.
-        </p>
-    </div>
 
-    <div class="service">
-        <h3>API Integration</h3>
-        <p>
-            I integrate third-party APIs to add functionality to your application, making sure they are reliable, well-documented, and optimized to meet your business needs.
-        </p>
-    </div>
-</section>
-
-
+        <section id="services" class="services-section">
+          <h2>Services</h2>
+          <div class="service">
+            <h3>Web Development</h3>
+            <p>I specialize in building responsive, high-performance websites using modern frameworks like React and Node.js to create seamless user experiences.</p>
+          </div>
+          <div class="service">
+            <h3>Backend Development</h3>
+            <p>I develop robust backend systems using Node.js, Express.js, and MongoDB to ensure scalability, security, and high performance.</p>
+          </div>
+          <div class="service">
+            <h3>API Integration</h3>
+            <p>I integrate third-party APIs to extend app functionalities in a secure and efficient manner.</p>
+          </div>
+        </section>
       </main>
+
       <footer>
         <div class="footer-content">
-          <section id="About">
-          <div class="footer-about">
-            <h3>About Me</h3>
-            <p>
-              I'm Peter, a passionate MERN Stack Developer focused on building high-quality, user-centric web applications.
-            </p>
-          </div>
+          <section id="about">
+            <div class="footer-about">
+              <h3>About Me</h3>
+              <p>I'm Peter, a passionate MERN Stack Developer focused on building high-quality, user-centric web applications.</p>
+            </div>
           </section>
           <section id="contact">
-          <div class="footer-contact">
-            <h3>Contact</h3>
-            <p>Email: peter.dev@example.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
-          </div>
+            <div class="footer-contact">
+              <h3>Contact</h3>
+              <p>Email: peter.dev@example.com</p>
+              <p>Phone: +1 (555) 123-4567</p>
+            </div>
           </section>
         </div>
-       
       </footer>
     </div>
   </body>
